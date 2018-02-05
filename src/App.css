@@ -3,11 +3,22 @@
   --icon-size-desktop: 36px;
   --icon-color-active: rgba(255, 255, 255, 1);
   --icon-color-inactive: rgba(255, 255, 255, 0.3);
+
+  --color-primary-0: #6A808A ;	/* Main Primary color */
+  --color-primary-1: #C5CCCF;
+  --color-primary-2: #8D9CA3;
+  --color-primary-3: #4C6975;
+  --color-primary-4: #345361;
+}
+
+Main {
+  background: linear-gradient(to right bottom, var(--color-primary-3), var(--color-primary-0))
 }
 
 .navOption > a{
   margin-top: 15%;
   font-size: var(--icon-size-desktop);
+  color: var(--icon-color-inactive) !important;
 }
 
 .active > a {
@@ -16,11 +27,7 @@
 } 
 
 .active {
-  background: #18AFF0;
-}
-
-.inactive > a {
-  color: var(--icon-color-inactive) !important;
+  background: linear-gradient(to right bottom, #77CDF2, #18AFF0);
 }
 
 .navLogo{
@@ -54,7 +61,7 @@
 .nav {
   height: 100%;
   width: 5.5%;
-  background: #3C484D;
+  background: var(--color-primary-4);
   display: inline-block;
   margin: 0;
   vertical-align: top;
@@ -72,12 +79,11 @@
 }
 
 .navOption:hover {
-  background-color: #18AFF0;
-  
+  background: linear-gradient(to right bottom, #77CDF2, #18AFF0);
 }
 
-a:hover {
-  color: var(--icon-color-active);
+.navOption:hover > a{
+  color: var(--icon-color-active) !important;
 }
 
 .backgroundImage {
@@ -106,6 +112,7 @@ a:hover {
   width: 90vw;
   background: #6A808A;
   z-index: 9999;
+  overflow-y: scroll;
 }
 
 
