@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
-class Home extends Component {
+class Projects extends Component {
     constructor(props) {
         super(props);
     }
 
     render () {
         return (
-            <p>Home</p>
+            <p>Projects</p>
         )
     }
 }
 
-export default Home;
+export default Projects;
