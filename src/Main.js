@@ -9,16 +9,17 @@ import Contact from './components/Contact';
 
 const Main = (props) => {
     return (
-        
-        <main className="pages">
-        <Header navItems={props.navItems} active={props.active} />
-        <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/projects" component={Projects} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/contact" component={Contact} />
-        </Switch>
-        </main>
+        <div className="content">
+            <Header navItems={props.navItems} active={props.active} changeActive={props.changeActive} />
+            <main className="pages">
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/projects" component={Projects} />
+                    <Route exact path="/about" component={About} />
+                    <Route exact path="/contact" component={Contact} />
+                </Switch>
+            </main>
+        </div>
     )
 }
 

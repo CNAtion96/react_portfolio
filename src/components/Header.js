@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import NavLink from './NavLink'
 
 let Header = (props) => {
 
     let navList = props.navItems.map( (data) => {
-            let className = "material-icons navLink " + props.active[data.key];
             return(
                 <li key={data.key}>
-                    <Link className={className} to={data.pageName} >
+                    <NavLink to={data.pageName} >
                         {data.icon}
-                    </Link>
+                    </NavLink>
                 </li>
             )
         })

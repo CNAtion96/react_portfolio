@@ -12,13 +12,13 @@ class App extends Component {
         key: 0
       },
       {
-        pageName: "/portfolio",
-        icon: "web",
+        pageName: "/about",
+        icon: "account_box",
         key: 1
       },
       {
-        pageName: "/about",
-        icon: "account_box",
+        pageName: "/projects",
+        icon: "web",
         key: 2
       },
       {
@@ -62,7 +62,7 @@ class App extends Component {
 
         <div className="backgroundImage"></div>
         <div className="content">
-          <Main navItems={this.state.navItems} active={this.state.activeNav} />
+          <Main navItems={this.state.navItems} active={this.state.activeNav} changeActive={this.changeActiveHandler} />
         </div>
 
       </div>
