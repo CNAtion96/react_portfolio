@@ -16,7 +16,7 @@ app.use(express.static(__dirname))
 app.use(cors());
 
 app.get('/',(req,res)=>{
-	res.sendFile(path.resolve(__dirname,'./app/index.html'));
+	res.sendFile(path.resolve(__dirname,'./app/public/index.html'));
 });
 
 const port = process.env.PORT || 8080;
