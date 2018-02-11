@@ -14,7 +14,17 @@ const Main = (props) => {
             <main className="pages">
                 <Switch>
                     <Route exact path="/" component={Home} />
-                    <Route exact path="/projects" component={Projects} />
+                    <Route 
+                        exact path="/projects" 
+                        render={
+                            routeProps => 
+                            <Projects 
+                                changeProject={props.changeProject}
+                                currentProject={props.currentProject}
+                                projectList={props.projectList}
+                            />
+                        }
+                    />
                     <Route exact path="/about" component={About} />
                     <Route exact path="/contact" component={Contact} />
                 </Switch>

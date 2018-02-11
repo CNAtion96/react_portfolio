@@ -15,37 +15,11 @@ Main {
   width: 100%;
 }
 
-.logo {
-  display: inline-block;
-  margin-left: 10px;
-  vertical-align: top;
-}
-
-.navLogo{
-  font-family: 'Lobster', cursive;
-  color: #EEE;
-  display: inline;
-}
-
-.NavLogoA{
-  color: #48AA9E;
-  font-family: 'Lobster', cursive;
-}
-
-.blink_me {
-  animation: blinker 2s linear infinite;
-}
-
-@keyframes blinker {  
-  50% { opacity: 0.2; }
-}
-
 .backgroundImage {
   position: fixed;
   left: 0;
   right: 0;
   z-index: 1;
-
   display: block;
   background: linear-gradient(to right bottom, #00f1fd, #008887);
   width: 100%;
@@ -63,7 +37,7 @@ Main {
   width: 90vw;
   background: #3c3037;
   z-index: 9999;
-  overflow-y: hidden;
+  overflow: hidden;
   padding: 0px;
   box-shadow: 6px 6px 16px #41343b;
 }
@@ -84,7 +58,7 @@ Main {
   overflow-x: hidden;
 }
 
-/* Header / Navigation */
+/* ----------------------- Header & Navigation ------------------------ */
 .header {
   text-align: left;
   height: 50px;
@@ -118,7 +92,32 @@ Main {
   color: var(--icon-color-active) !important;
 }
 
-/* Home Page */
+.logo {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+.navLogo{
+  font-family: 'Lobster', cursive;
+  color: #EEE;
+  display: inline;
+}
+
+.NavLogoA{
+  color: #48AA9E;
+  font-family: 'Lobster', cursive;
+}
+
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0.2; }
+}
+
+/* -------------------------- Home Page ------------------------------ */
 .home {
   height: 100%;
   background: 
@@ -136,7 +135,7 @@ Main {
   padding-top: 10px;
 }
 
-/* About */
+/* -------------------------- About ---------------------------------- */
 .aboutContainer {
   display: inline-block;
   width: 100%;
@@ -150,6 +149,7 @@ Main {
   margin: 0px;
   padding: 0px;
   display: inline-block;
+  color: rgb(151, 182, 196);
 }
 
 .skillsContainer {
@@ -201,7 +201,118 @@ Main {
   font-size: 4rem;
 }
 
+/* --------------------------- Projects -------------------------------- */
+.projectList {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  height: 35%;
+  padding: 15px;
+  overflow: auto !important;
+  background: rgb(46, 36, 42);
+  white-space: nowrap;
+}
 
+.projectList > ul {
+  list-style: none;
+}
+
+.projectList > ul > li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.projectItem {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: #188edd;
+  margin-right: 25px;
+  display: inline-block;
+  transition: width 0.75s ease-in-out;
+  text-align: center;
+  overflow: hidden;
+  color: black;
+}
+
+.projectItem:hover {
+  width: 200px;
+  cursor: pointer;
+  background: gray;
+}
+
+.projectItem:hover .projectTitle {
+  display: inline-block;
+}
+
+.projectTitle {
+  display: none;
+}
+
+.projectDisplay {
+  width: 100%;
+}
+
+/* --------------------------- Contact --------------------------------- */
+
+.contactForm {
+  width: 30%;
+  align-content: center;
+  align-items: center;
+  margin-left: 35%;
+}
+
+.contactForm > form > input {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 15px;
+  background: linear-gradient(to right bottom, #00f1fd, #00acac);
+  border: none;
+}
+
+#formSubmit {
+  width: 50px;
+}
+#formSubmit:hover {
+  background: linear-gradient(to right bottom, #188edd, #017c7c);
+  cursor: pointer;
+}
+
+.contactForm > form > textarea {
+  width: 100%;
+  height: 75%;
+  background: linear-gradient(to right bottom, #00f1fd, #00acac);
+  border: none;
+}
+
+.socialLinks {
+  text-align: center;
+  padding-left: 35px;
+}
+.socialLinks > a > i {
+  color: rgb(128, 152, 163);
+  display: inline-block;
+  vertical-align: top;
+  font-size: 3rem;
+  margin-right: 35px;
+}
+
+#facebook:hover {
+  color: rgb(60,102,175);
+  cursor: pointer;
+}
+
+#linkedin:hover {
+  color: rgb(0,118,178);
+  cursor: pointer;
+}
+
+#twitter:hover {
+  color: rgb(0,160,238);
+  cursor: pointer;
+}
+
+/* --------------------------- Breakpoints ---------------------------- */
 
 @media (max-width: 1200px) {
   .skills {
@@ -218,10 +329,6 @@ Main {
     margin: 0;
     height: 100vh;
     width: 100vw;
-    background: #3c3037;
-    z-index: 9999;
-    overflow-y: hidden;
-    padding: 0px;
   }
 
   .skillIcon {
@@ -236,8 +343,9 @@ Main {
     margin-top: 0px;
     padding: 0px;
   }
+  
+  .contactForm{
+    width: 50%;
+    margin-left: 25%
+  }
 }
-
- @media (max-width: 750px) {
-
- }
