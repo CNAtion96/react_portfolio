@@ -30,10 +30,12 @@ class App extends Component {
     ],
     project: {
       title: "",
-      img: "",
+      mainImage: "",
+      imgs: [],
       repo: "",
       description: "",
-      tech: "",
+      tech: [],
+      id: ""
     },
     projects: []
   }
@@ -44,8 +46,8 @@ class App extends Component {
     .then(function (res) {
         console.log(res);
         projects = res.data;
-        return(projects)
-        console.log(projects)
+        return(projects);
+        console.log(projects);
     })
     .catch(function (err) {
         console.log(err);
@@ -86,25 +88,39 @@ class App extends Component {
 
   changeProjectHandler = (id) => {
     let projectUrl = 'https://portfoliobackend.herokuapp.com/project/'+id;
-    let project = {}
+    let projectStart = {};
+    let project = this.state.project;
     axios.get(projectUrl)
       .then(function (res) {
         console.log(res);
-        project = res.data
-        console.log(project)
-      })
+        projectStart = res.data;
+        console.log(projectStart);
+        project = {
+          title: projectStart.title,
+          mainImage: projectStart.mainImage,
+          imgs:  projectStart.images,
+          description: projectStart.description,
+          tech: projectStart.technologies,
+          id: projectStart._id
+        };
+        console.log(project);
+        this.setState({
+          project: {
+            title: project.title,
+            imgs: project.imgs,
+            mainImage: project.mainImage,
+            description: project.description,
+            tech: project.technologies,
+            id: project._id
+          }
+        })
+      }.bind(this))
       .catch(function (err) {
           console.log(err);
       });
-    this.setState({
-      project: {
-        title: project.title,
-        img: project.img,
-        repo: project.repo,
-        description: project.description,
-        tech: project.tech
-      }
-    })
+    setTimeout( () => {
+      console.log(this.state.project)
+    }, 1500)
   }
 
   render() {

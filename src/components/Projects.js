@@ -1,17 +1,19 @@
 import React from 'react';
-import axios from 'axios';
 
 const Projects = (props) => {
 
+    let currentProject = props.currentProject;
+
     let projectList = props.projectList.map( (project) => {
         return(
-            <li key={project.id}>
+            <li key={project._id}>
                 <div className="projectItem" 
                 style={{
                     background: ('#00f0fd21', "url(" + project.mainImage + ")"),
                     backgroundSize: "cover",
                     backgroundPosition: 'center'
                 }}
+                onClick={(id) =>  props.changeProject(project._id)}
             >
                     <h3 className="projectTitle">{project.title}</h3>
                 </div>
@@ -29,14 +31,14 @@ const Projects = (props) => {
 
         <div className="projectDisplay">
             <div>
-                <img/>
+                <img alt=""/>
             </div>
             <div>
                 <h2>
-                    Project Title
+                    { currentProject.title }
                 </h2>
                 <h4>
-                   Project Description
+                   { currentProject.description }
                 </h4>
             </div>
         </div>
