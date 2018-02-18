@@ -110,7 +110,7 @@ class App extends Component {
             imgs: project.imgs,
             mainImage: project.mainImage,
             description: project.description,
-            tech: project.technologies,
+            tech: project.tech,
             id: project._id
           }
         })

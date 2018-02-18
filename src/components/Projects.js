@@ -19,7 +19,13 @@ const Projects = (props) => {
                 </div>
             </li>
             )
-    })
+    });
+
+    let technologies = props.currentProject.tech.map( (tech) => {
+        return(
+            <h4> {tech} </h4>
+        )
+    });
     
     return (
     <div>
@@ -30,8 +36,8 @@ const Projects = (props) => {
         </div>
 
         <div className="projectDisplay">
-            <div>
-                <img alt=""/>
+            <div className="projectImage">
+                <img alt="" src={ currentProject.mainImage }/>
             </div>
             <div>
                 <h2>
@@ -39,6 +45,12 @@ const Projects = (props) => {
                 </h2>
                 <h4>
                    { currentProject.description }
+                </h4>
+                <h2>
+                    Technologies used
+                </h2>
+                <h4>
+                    { technologies }
                 </h4>
             </div>
         </div>
