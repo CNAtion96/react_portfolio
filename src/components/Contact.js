@@ -11,7 +11,7 @@ const Contact = () => {
                     Feel free to reach out to me with any job offers or if you just want to chat!
                 </h4>
                 <h4>
-                    Just fill out the for below or find me on social media!
+                    Just fill out the form below or find me on social media!
                 </h4>
                 <div className="contactForm">
                     <form action="https://formspree.io/adkins.chris1996@gmail.com" method="POST">

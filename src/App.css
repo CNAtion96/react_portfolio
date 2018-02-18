@@ -9,12 +9,10 @@
 }
 
 Main {
-  position: absolute;
   background: #3c3037;
   margin: 0px;
   padding: 0px;
   width: 100%;
-  overflow-x: hidden;
 }
 
 .backgroundImage {
@@ -51,11 +49,13 @@ Main {
 }
 
 .pages {
+  position: relative;
   height: 100% !important;
   width: 100%;
   margin: 0px;
   padding: 0px;
   vertical-align: top;
+  overflow-y: scroll;
 }
 
 /* ----------------------- Header & Navigation ------------------------ */
@@ -136,10 +136,6 @@ Main {
 }
 
 /* -------------------------- About ---------------------------------- */
-.aboutPage {
-  position: relative;
-  overflow-y: scroll;
-}
 
 .aboutContainer {
   display: inline-block;
@@ -268,8 +264,6 @@ Main {
 
 .projectDisplay {
   width: 100%;
-  position: relative;
-  overflow-y: scroll;
 }
 
 /* --------------------------- Contact --------------------------------- */
