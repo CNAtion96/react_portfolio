@@ -23,13 +23,13 @@ const Contact = () => {
                     </form>
                 </div>
                 <div className="socialLinks">
-                    <a href="www.facebook.com/chris.adkins.18659">
-                        <i className="fa fa-facebook-square" id="facebook" aria-hidden="true"></i>
+                    <a href="https://github.com/CNAtion96" target="_blank">
+                        <i className="fa fa-github-square" id="facebook" aria-hidden="true"></i>
                     </a>
-                    <a href="www.linkedin.com/in/cAdkins96">
+                    <a href="https://www.linkedin.com/in/cAdkins96" target="_blank">
                         <i className="fa fa-linkedin-square" id="linkedin" aria-hidden="true"></i>
                     </a>
-                    <a href="https://twitter.com/CNAdkins96">
+                    <a href="https://twitter.com/CNAdkins96" target="_blank">
                         <i className="fa fa-twitter-square" id="twitter" aria-hidden="true"></i>
                     </a>
                 </div>
