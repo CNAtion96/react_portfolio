@@ -9,13 +9,17 @@ const Projects = (props) => {
             <li key={project._id}>
                 <div className="projectItem" 
                 style={{
-                    background: ('#00f0fd21', "url(" + project.mainImage + ")"),
+                    background: ("url(" + project.mainImage +")"),
                     backgroundSize: "cover",
                     backgroundPosition: 'center'
                 }}
                 onClick={(id) =>  props.changeProject(project._id)}
             >
-                    <h3 className="projectTitle">{project.title}</h3>
+                    <div className="projectTitle">
+                        <h3>
+                            {project.title}
+                        </h3>
+                    </div>
                 </div>
             </li>
             )
