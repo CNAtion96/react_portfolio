@@ -334,7 +334,7 @@ Main {
   }
 }
 
-@media (max-width: 995px) {
+@media (max-width: 1000px) {
   .content {
     position: absolute;
     top: 0%;
