@@ -4,7 +4,7 @@ import ReactTooltip from 'react-tooltip';
 const About = () => {
 
     return (
-        <div>
+        <div className="aboutPage">
             <div className="aboutContainer">
                 <div className="about">
                     <h1>About</h1>

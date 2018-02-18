@@ -9,10 +9,12 @@
 }
 
 Main {
+  position: absolute;
   background: #3c3037;
   margin: 0px;
   padding: 0px;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .backgroundImage {
@@ -54,8 +56,6 @@ Main {
   margin: 0px;
   padding: 0px;
   vertical-align: top;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 /* ----------------------- Header & Navigation ------------------------ */
@@ -136,6 +136,11 @@ Main {
 }
 
 /* -------------------------- About ---------------------------------- */
+.aboutPage {
+  position: relative;
+  overflow-y: scroll;
+}
+
 .aboutContainer {
   display: inline-block;
   width: 100%;
@@ -218,7 +223,7 @@ Main {
   width: 100%;
   height: 35%;
   padding: 10px;
-  overflow: auto !important;
+  overflow-x: scroll;
   background: rgb(46, 36, 42);
   white-space: nowrap;
 }

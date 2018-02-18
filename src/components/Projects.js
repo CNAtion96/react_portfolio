@@ -23,7 +23,7 @@ const Projects = (props) => {
 
     let technologies = props.currentProject.tech.map( (tech) => {
         return(
-            <h4> {tech} </h4>
+            <h4 key={tech}> {tech} </h4>
         )
     });
     
@@ -49,9 +49,7 @@ const Projects = (props) => {
                 <h2>
                     Technologies used
                 </h2>
-                <h4>
-                    { technologies }
-                </h4>
+                { technologies }
             </div>
         </div>
     </div>
