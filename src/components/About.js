@@ -17,6 +17,9 @@ const About = () => {
                     <h3>
                         Currently Reading: The Sword of Truth Series by Terry Goodkind
                     </h3>
+                    <h3>
+                        Currently Working on: Vue.js and Electron Spotify application
+                    </h3>
                 </div>
                 
             </div>
