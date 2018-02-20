@@ -355,6 +355,10 @@ Main {
 }
 
 @media (max-width: 1000px) {
+
+  .desktopResume {
+    display: none;
+  }
   .content {
     position: absolute;
     top: 0%;

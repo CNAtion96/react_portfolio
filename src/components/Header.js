@@ -27,7 +27,10 @@ let Header = (props) => {
             <ul>
                 { navList }
                 <li className="resume">
-                    <a href="../files/Resume.pdf"><i className="fa fa-download download"></i>Download Resume</a>
+                    <a href="../files/Resume.pdf">
+                        <i className="fa fa-download download"></i>
+                        <span className="desktopResume">Download Resume<span>
+                    </a>
                 </li>
             </ul>
         </div>
