@@ -117,6 +117,26 @@ Main {
   50% { opacity: 0.2; }
 }
 
+.resume {
+  vertical-align: top;
+  margin-top: 10px !important;
+}
+
+.resume > a {
+  color: var(--icon-color-inactive);
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.resume > a:hover {
+  text-decoration: none;
+  color: var(--icon-color-active);
+}
+
+.download {
+  padding-right: 5px;
+}
+
 /* -------------------------- Home Page ------------------------------ */
 .home {
   height: 100%;

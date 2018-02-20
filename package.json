@@ -11,6 +11,7 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
     "react-sidebar": "^2.3.2",
+    "react-slick": "^0.18.1",
     "react-tooltip": "^3.4.0"
   },
   "scripts": {
