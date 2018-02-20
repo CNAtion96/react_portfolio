@@ -29,7 +29,7 @@ let Header = (props) => {
                 <li className="resume">
                     <a href="../files/Resume.pdf">
                         <i className="fa fa-download download"></i>
-                        <span className="desktopResume">Download Resume<span>
+                        <span className="desktopResume">Download Resume</span>
                     </a>
                 </li>
             </ul>
