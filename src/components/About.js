@@ -18,7 +18,7 @@ const About = () => {
                         Currently Reading: The Sword of Truth Series by Terry Goodkind
                     </h3>
                     <h3>
-                        Currently Working on: Intermittent Fasting and Keto tracker built with Vue.js with Node.js backend
+                        Currently Working on: React Native app for Kinobody (personal use)
                     </h3>
                 </div>
                 
