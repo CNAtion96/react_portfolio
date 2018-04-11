@@ -18,7 +18,7 @@ const About = () => {
                         Currently Reading: The Sword of Truth Series by Terry Goodkind
                     </h3>
                     <h3>
-                        Currently Working on: React Native app for Kinobody (personal use)
+                        Currently Working on: React Native app for Kinobody (unofficial)
                     </h3>
                 </div>
                 
